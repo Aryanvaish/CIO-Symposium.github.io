@@ -1,0 +1,1337 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;
+    font-family: var(--Montserrat);
+}
+
+:root{
+
+--white: #fff; 
+--whitegray: #EAF8FF;
+--purple: #094E87;
+--linearWhite: #B1E5FF;
+--grainwhite: #B8E7FF;
+--blue: #325091;
+--greyfade: #C6E0ED;
+--browndark: #484747;
+--medium: 500;
+--semibold: 600;
+--bold: 700;
+--Montserrat: 'Montserrat', sans-serif;
+--arial: Arial, Helvetica, sans-serif;
+--anton: 'Anton', sans-serif;
+
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: var(--Montserrat);
+    background-color: var(--whitegray);
+}
+
+.img-fluid{
+  max-width: 100%;
+}
+
+.container-fluid{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container{
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+figure{
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sprite{
+  display: inline-block;    
+  background: url('../images/sprite..png');
+  background-repeat: no-repeat;   
+}
+
+.purple{
+  background-color: var(--purple);
+}
+
+.NavivationBar{
+  padding: 2rem 1.5rem 2rem 4.5rem;
+  background-color: var(--purple);
+  display: flex;
+  justify-content: space-between;
+}
+
+.NavivationBar a{
+  font-size: 2.5rem;
+  font-weight: var(--semibold);
+  color: var(--white);
+  text-decoration: none;
+}
+
+.webText2{
+  display: none;
+}
+
+.NavivationBar ul{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.NavivationBar ul li{
+  list-style: none;
+  margin: 0 1.5rem;
+}
+
+.NavivationBar ul li a{
+  font-size: 1.7rem;
+  font-weight: var(--semibold);
+  color: var(--white);
+  text-decoration: none;
+}
+
+.backgHeader{
+  background-image: url(../images/Image\ 308.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  padding: 8rem 0 6rem;
+}
+
+.mainBanner{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.Venue{
+  background-image: url(../images/Group\ 3226.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  padding: 1.5rem 2.5rem;
+  margin: 2rem 0;
+}
+
+.Venue h1{
+  font-size: 3.4rem;
+  text-align: center;
+  font-weight: var(--bold);
+  color: var(--purple);
+}
+
+.mainBanner button{
+  width: 28.7rem;
+  height: 6.6rem;
+  background-color: red;
+  border-radius: 5rem;
+  border: 0;
+  font-size: 2rem;
+  color: var(--white);
+  font-family: var(--Montserrat);
+  font-weight: var(--semibold);
+  cursor: pointer;
+  margin: 2rem 0;
+}
+
+.BrandBar{
+  background-image: linear-gradient(var(--whitegray),var(--linearWhite));
+  width: 90%;
+  height: 16rem;
+  margin: 6rem auto;
+  border-radius: 1.5rem;
+  border: 4px solid var(--white);
+  box-shadow: 1px 1px 2rem #00000029;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 0;
+}
+
+.imgSpritext{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.imgSpritext h3{
+  font-size: 1.7rem;
+  color: var(--purple);
+  font-weight: var(--medium);
+  margin: 0 0 1.5rem 0;
+}
+
+
+.forb-logo{
+    width: 7.5rem;
+    height: 7.5rem;
+    background-position: -225px -8px;
+}
+
+.prod-logo{
+  width: 8.2rem;
+  height: 7.5rem;
+  background-position: -112px -8px;
+}
+
+.udem-logo{
+  width: 8.2rem;
+  height: 6.9rem;
+  background-position: -337px -17px;
+}
+
+.BackBar{
+  width: 90%;
+  box-sizing: border-box;
+  height: 9.5rem;
+  background-color: var(--grainwhite);
+  border-radius: 6rem;
+  margin: 15rem auto 0 auto;
+}
+
+.details{
+  width: 80%;
+  height: auto;
+  padding: 2rem 3rem;
+  margin: -15rem auto 5rem auto;
+  background-color: var(--white);
+  border: .5px solid var(--blue);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.detailLayout{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.detailLayout h2{
+  font-family: var(--anton);
+  font-size: 6rem;
+  font-weight: var(--medium);
+  color: var(--purple);
+}
+
+.detailLayout h3{
+  font-size: 3rem;
+  font-weight: var(--medium);
+  color: var(--purple);
+  text-align: center;
+}
+
+.detailLayout::before{
+  content: '';
+  background-color: var(--blue);
+  display: inline-block;
+  height: 15.9rem;
+  width: .1rem;
+  position: absolute;
+  right: -50px;
+}
+
+.detailLayout:nth-child(5)::before{
+  display: none;
+}
+
+.overview{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 0 8rem 0;
+}
+
+.overview h2{
+  font-size: 3.8rem;
+  font-weight: var(--bold);
+  color: var(--purple);
+  margin: 1rem 0 3rem 0;
+  position: relative;
+}
+
+.overview h2::before{
+  content: '';
+  background-color: var(--greyfade);
+  display: inline-block;
+  border-radius: .3rem;
+  height: .5rem;
+  width: 5rem;
+  position: absolute;
+  left: -6.5rem;
+  top: 2.2rem;
+}
+
+.overview h2::after{
+  content: '';
+  background-color: var(--greyfade);
+  display: inline-block;
+  border-radius: .3rem;
+  height: .5rem;
+  width: 5rem;
+  position: absolute;
+  right: -6.5rem;
+  top: 2.2rem;
+}
+
+.overview p{
+  font-size: 1.6rem;
+  line-height: 2.5rem;
+  font-weight: var(--medium);
+  text-align: center;
+  color: var(--purple);
+  width: 91%;
+  margin: .5rem 0;
+}
+
+.focus{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 15rem 0 8rem 0;
+}
+
+.focus h2{
+  font-size: 3.8rem;
+  font-weight: var(--bold);
+  color: var(--purple);
+  margin: 1rem 0 3rem 0;
+  position: relative;
+}
+
+.focus h2::before{
+  content: '';
+  background-color: var(--greyfade);
+  display: inline-block;
+  border-radius: .3rem;
+  height: .5rem;
+  width: 5rem;
+  position: absolute;
+  left: -6.5rem;
+  top: 2.2rem;
+}
+
+.focus h2::after{
+  content: '';
+  background-color: var(--greyfade);
+  display: inline-block;
+  border-radius: .3rem;
+  height: .5rem;
+  width: 5rem;
+  position: absolute;
+  right: -6.5rem;
+  top: 2.2rem;
+}
+
+.retail-logo{
+  background-position: -373px -201px;
+  width: 6.8rem;
+  height: 7.3rem;
+}
+
+.manuf-logo{
+  background-position: -8px -8px;
+  width: 7.5rem;
+  height: 7.8rem;
+}
+
+.health-logo{
+  background-position: -112px -8px;
+  width: 8.2rem;
+  height: 7.5rem;
+}
+
+.bfsi-logo{
+  background-position: -225px -8px;
+  width: 7.5rem;
+  height: 7.4rem;
+}
+
+.fmcg-logo{
+  background-position: -337px -17px;
+  width: 8.2rem;
+  height: 6.9rem;
+}
+
+.autom-logo{
+  background-position: -456px -38px;
+  width: 10.3rem;
+  height: 4.5rem;
+}
+
+.focus ul{
+  width: 90%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.focus ul li{
+  width: 17.5rem;
+  height: 25rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  border-radius: 1.3rem;
+}
+
+
+.retLI1{
+  background-color: #FFE5CE;
+}
+
+.retLI2{
+  background-color: #DBD9FF;
+}
+
+.retLI3{
+  background-color: #B3E8EF;
+}
+
+.retLI4{
+  background-color: #CBEBB1;
+}
+
+.retLI5{
+  background-color: #FFEF95;
+}
+
+.retLI6{
+  background-color: #EAE1E1;
+}
+
+.focus ul li strong{
+  font-size: 2.2rem;
+  font-weight: var(--semibold);
+  margin: 3.5rem 0 0 0;
+  color: var(--purple);
+}
+
+.backCir{
+  padding: 3.5rem 4rem;
+  background-color: var(--white);
+  border-radius: 100%;
+}
+
+.carCir{
+  padding: 4.5rem 3rem;
+}
+
+.keyDisc{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 0 8rem 0;
+}
+
+.keyDisc h2{
+  font-size: 3.8rem;
+  font-weight: var(--bold);
+  color: var(--purple);
+  margin: 1rem 0 3rem 0;
+  position: relative;
+}
+
+.keyDisc h2::before{
+  content: '';
+  background-color: var(--greyfade);
+  display: inline-block;
+  border-radius: .3rem;
+  height: .5rem;
+  width: 5rem;
+  position: absolute;
+  left: -6.5rem;
+  top: 2.2rem;
+}
+
+.keyDisc h2::after{
+  content: '';
+  background-color: var(--greyfade);
+  display: inline-block;
+  border-radius: .3rem;
+  height: .5rem;
+  width: 5rem;
+  position: absolute;
+  right: -6.5rem;
+  top: 2.2rem;
+}
+
+.KeyElem{
+  display: flex;
+  justify-content: space-between;
+}
+
+.rob-logo{
+  background-position: -264px -98px;
+  width: 8.3rem;
+  height: 8.7rem;
+}
+
+.auto-logo{
+  background-position: -378px -108px;
+  width: 6.3rem;
+  height: 8.7rem;
+}
+
+.futu-logo{
+  background-position: -483px -112px;
+  width: 5.1rem;
+  height: 8.7rem;
+}
+
+.dataA-logo{
+  background-position: -15px -193px;
+  width: 5.9rem;
+  height: 8.7rem;
+}
+
+.macL-logo{
+  background-position: -266px -201px;
+  width: 6.1rem;
+  height: 8.7rem;
+}
+
+.DigiE-logo{
+  background-position: -14px -286px;
+  width: 6.3rem;
+  height: 8.7rem;
+}
+
+.busT-logo{
+  background-position: -105px -193px;
+  width: 4.8rem;
+  height: 8.7rem;
+}
+
+.ArtI-logo{
+  background-position: -185px -190px;
+  width: 4.9rem;
+  height: 8.7rem;
+}
+
+.KeyElem ul{
+  width: 60%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  border-bottom: 8px solid var(--purple);
+}
+
+.KeyElem li{
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.KeyElem ul li strong{
+  font-size: 1.8rem;
+  font-weight: var(--semibold);
+  color: var(--purple);
+  width: 15rem;
+  text-align: center;
+  height: 4rem;
+}
+
+.whoShould{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 0 8rem 0;
+  position: relative;
+}
+
+.whoShould::before{
+  content: '';
+  background-image: url(../images/Group\ 3124.png);
+  display: inline-block;
+  width: 18.9rem;
+  height: 38.6rem;
+  position: absolute;
+  left: 0;
+  top: 5px;
+}
+
+.whoShould::after{
+  content: '';
+  background-image: url(../images/Group\ 3140.png);
+  display: inline-block;
+  width: 18.9rem;
+  height: 38.6rem;
+  position: absolute;
+  right: 0;
+  top: 5px;
+}
+
+.whoShould h2{
+  font-size: 3.8rem;
+  font-weight: var(--bold);
+  color: var(--purple);
+  margin: 1rem 0 3rem 0;
+  position: relative;
+}
+
+.whoShould h2::before{
+  content: '';
+  background-color: var(--greyfade);
+  display: inline-block;
+  border-radius: .3rem;
+  height: .5rem;
+  width: 5rem;
+  position: absolute;
+  left: -6.5rem;
+  top: 2.2rem;
+}
+
+.whoShould h2::after{
+  content: '';
+  background-color: var(--greyfade);
+  display: inline-block;
+  border-radius: .3rem;
+  height: .5rem;
+  width: 5rem;
+  position: absolute;
+  right: -6.5rem;
+  top: 2.2rem;
+}
+
+.tick-logo{
+ background-position: -37px -379px;
+ height: 2.1rem;
+ width: 2rem;
+}
+
+.whoShould ul{
+  margin: 2rem auto;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 0 25% 0 25%;
+}
+
+.whoShould ul li{
+  display: flex;
+  align-items: center;
+  margin: 1.5rem;
+  width: 45%;
+}
+.whoShould ul li h3{
+  margin: 0 0 0 .5rem;
+}
+
+.whoShould ul li h3{
+  font-size: 1.4rem;
+  color: var(--purple);
+  font-weight: var(--semibold);
+}
+
+.BackBar2{
+  width: 85%;
+  box-sizing: border-box;
+  height: 9.5rem;
+  background-color: var(--white);
+  border-radius: 6rem;
+  margin: 15rem auto 0 auto;
+}
+
+.Whyatt{
+  display: flex;
+  flex-direction: column;
+}
+
+.Whyatt ul{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: -16rem 0 0 0;
+  padding: 0 15rem;
+}
+
+.Whyatt ul li{
+  width: 17.3rem;
+  height: 23.7rem;
+  background-image: linear-gradient(var(--whitegray),#B1E5FF);
+  border: 4px solid var(--white);
+  box-shadow: 1px 1px 2rem #00000029;
+  border-radius: 1.5rem;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  padding: 0 1rem;
+  box-sizing: border-box;
+}
+
+.Whyatt ul li strong{
+  font-size: 2rem;
+  font-weight: var(--semibold);
+  line-height: 3.2rem;
+  color: var(--purple);
+}
+
+.whyh2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 0 8rem 0;
+}
+
+.whyh2{
+  font-size: 3.8rem;
+  font-weight: var(--bold);
+  color: var(--purple);
+  margin: 1rem 0 3rem 0;
+  position: relative;
+}
+
+.whyh2::before{
+  content: '';
+  background-color: var(--greyfade);
+  display: inline-block;
+  border-radius: .3rem;
+  height: .5rem;
+  width: 5rem;
+  position: absolute;
+  left: 46rem;
+  top: 2.2rem;
+}
+
+.whyh2::after{
+  content: '';
+  background-color: var(--greyfade);
+  display: inline-block;
+  border-radius: .3rem;
+  height: .5rem;
+  width: 5rem;
+  position: absolute;
+  right: 46rem;
+  top: 2.2rem;
+}
+
+
+
+@media (max-width: 1260px){
+
+  .NavivationBar a{
+    font-size: 2rem;
+  }
+
+  .NavivationBar ul li{
+    margin: 0 1.5rem;
+  }
+  
+  .NavivationBar ul li a{
+    font-size: 1.4rem;
+    font-weight: var(--semibold);
+  }
+
+  .detailLayout::before{
+    right: -30px;
+  }
+
+  .whoShould ul{
+    margin: 2rem auto;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0 0 0 20%;
+  }
+  .BackBar2{
+    display: none;
+  }
+
+  .Whyatt ul li{
+    margin: 1rem;
+  }
+
+  .whyh2::before{
+    height: 0;
+    width: 0;
+  }
+  
+  .whyh2::after{
+    height: 0;
+    width: 0;
+  }
+
+  .whyh2 {
+    margin: 1rem 0 1rem 0;
+  }
+
+  .Whyatt ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 2rem 0 0 0;
+    padding: 0 15rem;
+  }
+  
+ 
+
+}
+
+
+@media (max-width: 1120px){
+
+  .NavivationBar {
+    padding: 2rem .5rem 2rem 2.5rem;
+  }
+
+  .NavivationBar a{
+    font-size: 1.6rem;
+  }
+
+  .NavivationBar ul li{
+    margin: 0 1rem;
+  }
+  
+  .NavivationBar ul li a{
+    font-size: 1.2rem;
+    font-weight: var(--semibold);
+  }
+
+  .mainBanner figure img{
+    width: 70%;
+    height: 95%;
+  }
+
+  .Venue h1{
+    font-size: 2rem;
+  }
+
+  .backgHeader {
+    padding: 5rem 0 6rem;
+  }
+  
+  .mainBanner button{
+    width: 20rem;
+    height: 5rem;
+    border-radius: 5rem;
+    font-size: 1.5rem;
+    color: var(--white);
+    margin: 1.2rem 0;
+  }
+
+  .details {
+    width: 80%;
+    height: auto;
+    padding: 3rem 0;
+    margin: -13.5rem auto 5rem auto;
+    justify-content: space-evenly;
+  }
+
+  .detailLayout::before{
+    right: -21px;
+    height: 12.9rem;
+  }
+  
+  .detailLayout h2 {
+    font-size: 4rem;
+  }
+
+  .detailLayout h3 {
+    font-size: 2rem;
+  }
+
+  .focus ul li{
+    margin: 1.5rem .2rem;
+  }
+  .KeyElem ul li strong {
+    height: 12rem;
+  }
+  
+  
+  
+  
+
+}
+
+@media (max-width: 920px){
+
+  .NavivationBar {
+    padding: 2rem .5rem 2rem 2.5rem;
+  }
+
+  .NavivationBar a{
+    font-size: 1.4rem;
+  }
+
+  .NavivationBar ul li{
+    margin: 0 .8rem;
+  }
+  
+  .NavivationBar ul li a{
+    font-size: 1rem;
+    font-weight: var(--semibold);
+  }
+
+  .detailLayout::before{
+    right: -23px;
+    height: 9rem;
+  }
+  
+  .detailLayout h2 {
+    font-size: 3rem;
+  }
+
+  .detailLayout h3 {
+    font-size: 1.5rem;
+  }
+  .KeyElem ul li strong {
+    height: 12rem;
+  }
+
+  .KeyElem ul {
+    width: 100%;
+  }
+
+  .KeyElem figure img{
+    display: none;
+  }
+  
+
+}
+
+@media (max-width: 760px){
+  .SpeakerLi{
+    display: none;
+  }
+
+  .WhoLi{
+    display: none;
+  }
+
+  .BecomeLi{
+    display: none;
+  }
+
+  .NavivationBar ul li{
+    margin: 0 1.4rem;
+  }
+  
+  .NavivationBar ul li a{
+    font-size: 1rem;
+    font-weight: var(--medium);
+    color: var(--purple);
+    padding: .6rem 1.2rem;
+    border-radius: 2rem;
+    background-color: var(--grainwhite);
+  }
+
+  .mainBanner figure img {
+    width: 20.5rem;
+    height: 15.5rem;
+  }
+
+  .Venue h1 {
+    font-size: 1.4rem;
+  }
+
+  .imgSpritext h3 {
+    font-size: 1.1rem;
+    margin: 0 0 -3rem 0;
+  }
+
+  .BrandBar {
+    background-image: linear-gradient(var(--whitegray)#B1E5FF);
+    width: 98%;
+    height: 8.5rem;
+  }
+
+  .forb-logo {
+   scale: .5;
+   margin: 2rem 0 -1.6rem 0; 
+  }
+
+  .prod-logo {
+   scale: .5;
+   margin: 2rem 0 -1.6rem 0; 
+  }
+
+  .imgspt3{
+    display: none;
+  }
+
+  .details{
+    flex-wrap: wrap;
+    margin: -19rem auto 5rem auto;
+  }
+
+  .detailLayout{
+    margin: 1rem 3rem;
+  }
+
+  .detailLayout::before{
+    right: -48px;
+    height: 9rem;
+  }
+  
+  .detailLayout h2 {
+    font-size: 3.5rem;
+  }
+
+  .detailLayout h3 {
+    font-size: 2.2rem;
+  }
+
+  .detailLayout:nth-child(3)::before{
+    display: none;
+  }
+
+  
+  .BackBar {
+    width: 100%;
+  }  
+
+  .overview h2{
+    margin: 1rem 0 2.5rem 0;
+  }
+
+  .overview p{
+    font-size: 1.4rem;
+    line-height: 2rem;
+    width: 88%;
+  }
+
+  .overview {
+    margin: 0 0 2rem 0;
+  }
+
+  .focus {
+
+    margin: 0 0 8rem 0;
+  }
+
+  .whoShould ul{
+    margin: 2rem auto;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0 0 0 10%;
+  }
+  
+
+}
+
+
+@media (max-width: 650px){
+
+  .detailLayout {
+    margin: 1rem 1rem 1rem 3rem;
+  }
+
+  .detailLayout::before{
+    right: -28px;
+    height: 9rem;
+  }
+
+  .KeyElem figure img{
+    display: none;
+  }
+
+  .keyDisc h2 {
+    font-size: 1.5rem;
+  }
+
+  .keyDisc h2::before {
+    height: .3rem;
+    width: 2.5rem;
+    left: -3.5rem;
+    top: .9rem;
+  }
+
+  .keyDisc h2::after {
+    height: .3rem;
+    width: 2.5rem;
+    right: -3.5rem;
+    top: .9rem;
+  }
+
+  .KeyElem ul {
+    width: 100%;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+
+  .KeyElem li {
+    margin: 1rem 0;
+  }
+  .KeyElem ul li strong {
+    height: 10rem;
+  }
+  .whoShould ul{
+    margin: 2rem auto;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0;
+  }
+
+
+
+
+
+}
+
+@media (max-width: 540px){  
+  .NavivationBar {
+    padding: 2rem 0 2rem 0;
+  }
+
+  .NavivationBar a{
+    font-size: 1.6rem;
+    font-family: var(--arial);
+    font-weight: var(--bold);
+  }
+
+  .NavivationBar ul li{
+    margin: 0 .3rem;
+  }
+
+  .webText1{
+    display: none;
+  }
+
+  .webText2{
+    display: flex;
+  }
+
+  .backgHeader {
+    padding: 5rem 0 3.5rem;
+  }
+
+  .Venue h1 {
+    font-size: .9rem;
+  }
+
+  .mainBanner button {
+    width: 11.1rem;
+    height: 3rem;
+    border-radius: 2.8rem;
+    font-size: .9rem;
+    margin: .2rem 0;
+    font-family: var(--Montserrat);
+  }
+
+  .udem-logo{
+    display: none;
+  }
+
+  .BackBar {
+    width: 100%;
+    height: 5.3rem;
+    margin: 10rem auto 0 auto;
+  }
+
+  .details {
+    flex-wrap: wrap;
+    margin: -11rem auto 2rem auto;
+    padding: .5rem 0 0 0
+  }
+
+  .detailLayout h2 {
+    font-size: 2.1rem;
+  }
+
+  .detailLayout h3 {
+    font-size: 1.2rem;
+  }
+
+  .detailLayout::before {
+    right: -28px;
+    height: 4.2rem;
+  }
+
+  .overview h2 {
+    font-size: 1.5rem;
+    margin: 1rem 0 1.5rem 0;
+  }
+
+  .overview h2::before {
+    height: .3rem;
+    width: 2.5rem;
+    left: -3.5rem;
+    top: .9rem;
+  }
+
+  .overview h2::after {
+    height: .3rem;
+    width: 2.5rem;
+    right: -3.5rem;
+    top: .9rem;
+  }
+
+  .overview p {
+    font-size: 1.4rem;
+    line-height: 2rem;
+    width: 98%;
+    margin: .1rem 0;
+  } 
+
+  .BrandBar{
+    margin: 2rem auto 0 auto;
+  }
+
+  .focus ul {
+    width: 100%;
+  }
+
+  .focus ul li {
+    width: 15rem;
+    height: 18.5rem;
+    margin: .6rem .2rem;
+  }
+
+  .focus ul li strong {
+    font-size: 1.8rem;
+    margin: 1.2rem 0 0 0;
+  }
+
+  .focus h2 {
+    font-size: 1.5rem;
+  }
+
+  .focus h2::before {
+    height: .3rem;
+    width: 2.5rem;
+    left: -3.2rem;
+    top: 1rem;
+  }
+
+  .focus h2::after{
+    height: .3rem;
+    width: 2.5rem;
+    right: -3.2rem;
+    top: 1rem;
+  }
+
+  .backCir {
+    padding: 1.8rem 2.5rem;
+    background-color: var(--white);
+    border-radius: 100%;
+  }
+
+  .carCir {
+    padding: 3.5rem 2rem;
+  }
+
+  .whoShould ul li {
+    display: flex;
+    align-items: center;
+    margin: .5rem 1.5rem;
+    width: 100%;
+  }
+
+  .whoShould  h2 {
+    font-size: 1.5rem;
+  }
+
+  .whoShould h2::before {
+    height: .3rem;
+    width: 2.5rem;
+    left: -3.2rem;
+    top: 1rem;
+  }
+
+  .whoShould h2::after{
+    height: .3rem;
+    width: 2.5rem;
+    right: -3.2rem;
+    top: 1rem;
+  }
+
+  .whoShould ul li h3{
+    font-size: 1.3rem;
+    color: var(--browndarkbr);
+  }
+
+  .whyh2{
+    font-size: 1.5rem;
+  }
+  .whoShould {
+    margin: 0 0 4em 0;
+  }
+
+  .whyh2::before {
+    height: .3rem;
+    width: 2.5rem;
+    left: 8.2rem;
+    top: 1rem;
+  }
+
+  .whyh2::after{
+    height: .3rem;
+    width: 2.5rem;
+    right: 8.2rem;
+    top: 1rem;
+  }
+
+  .Whyatt ul li {
+    width: auto;
+    height: 11.4rem;
+    padding: .5rem;
+    box-sizing: border-box;
+    margin: 1rem 0;
+  }
+
+  .Whyatt ul li strong {
+    width: 13.1rem;
+    line-height: 2.1rem;
+  }
+
+  .Whyatt ul {
+    margin: 2rem 0 0 0;
+    padding: 0;
+    flex-direction: row;
+  }
+
+  .Whyatt ul li strong {
+    width: 13.1rem;
+    font-size: 1.5rem;
+    line-height: 2.1rem;
+  }
+
+  .Whyatt ul li:nth-child(5){
+    width: 93%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+}
